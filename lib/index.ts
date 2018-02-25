@@ -1,3 +1,3 @@
-export function parse() : boolean {
+export function parse(): boolean {
   return true;
 }

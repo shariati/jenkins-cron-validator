@@ -1,3 +1,1 @@
-export function parse(): boolean {
-  return true;
-}
+export { default as parse } from './parse';

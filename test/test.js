@@ -1,9 +1,33 @@
 const expect = require('chai').expect;
-const index = require('../dist/index');
+const { parse } = require('../dist');
 
 describe('parse', () => {
-  it('should return empty string', () => {
-    const result = index.parse();
-    expect(result).to.be.true;
+  it('should parse "* * * * *"', () => {
+    const result = parse('* * * * *');
+    expect(result).to.deep.equal({
+      errors: [],
+      fields: [
+        {
+          type: 'minute',
+          hash: false,
+        },
+        {
+          type: 'hour',
+          hash: false,
+        },
+        {
+          type: 'dayOfMonth',
+          hash: false,
+        },
+        {
+          type: 'month',
+          hash: false,
+        },
+        {
+          type: 'dayOfWeek',
+          hash: false,
+        },
+      ],
+    });
   });
 });

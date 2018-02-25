@@ -1,5 +1,5 @@
 # jenkins-cron-validator
-A node module to validate jenkins cron format.
+A node module to validate [Jenkins Cron format](https://github.com/jenkinsci/jenkins/blob/master/core/src/main/resources/hudson/triggers/TimerTrigger/help-spec.jelly).
 
 ## Contributing
 

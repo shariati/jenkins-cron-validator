@@ -3,8 +3,21 @@ A node module to validate [Jenkins Cron format](https://github.com/jenkinsci/jen
 
 ## Contributing
 
-`yarn build` - compiles to JavaScript.
-`yarn test` - run tests on compiled code
+### How to Build
+Compiles to JavaScript.
+
+```bash
+$ yarn build
+Done in 1.43s.
+```
+
+### How to Test
+Runs tests on compiled code
+
+```bash
+$ yarn test
+1 passing
+```
 
 ## License
 
